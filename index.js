@@ -43,13 +43,13 @@ app.get('/favicon.ico',(req,res)=>{
 app.post('/upload',upload.single('product'),(req,res)=>{
 res.json({
     success:1,
-    image_url:`http://localhost:4000/images/${req.file.filename}`
+    image_url:`https://e-commerce-backend-iixa.onrender.com/images/${req.file.filename}`
 })
 })
 app.post('/uploadcategory',upload.single('categoryimage'),(req,res)=>{
     res.json({
         success:1,
-        image_url:`http://localhost:4000/images/${req.file.filename}`
+        image_url:`https://e-commerce-backend-iixa.onrender.com/images/${req.file.filename}`
     })
 })
 app.post('/addcategory',async (req,res)=>{
